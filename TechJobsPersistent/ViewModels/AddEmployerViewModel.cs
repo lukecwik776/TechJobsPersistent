@@ -4,10 +4,10 @@ namespace TechJobsPersistent.ViewModels
 {
     public class AddEmployerViewModel
     {
-        [Required]
+        [Required(ErrorMessage ="Name Field Required")]
         public string Name { get; set; }
 
-        [Required]
+        [Required(ErrorMessage ="Location Field Required")]
         public string Location { get; set; }
     }
 }
