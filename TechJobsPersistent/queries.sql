@@ -12,4 +12,5 @@ where (location = 'St. Louis')
 
 SELECT name, description
 FROM skills
-INNER JOIN jobskills on skills.Id = jobskills.SkillId;
+INNER JOIN jobskills on skills.Id = jobskills.SkillId
+ORDER BY name ASC;
